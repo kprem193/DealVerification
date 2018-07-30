@@ -1,0 +1,8 @@
+
+
+Call: 'hi im sammy from fil how can i help you i am weasly i want to sell fifty percent in a  special situation fund  okay it amounts to ten thousand pounds sounds good so may i confirm your details before you place the deal yes sure what is your full name weasly walnut what is the first line of your address and the pincode peter residency public pittensburg one one zero zero  what is the last ffour numbers of the card registered one two five nine of american express yes so i want to read the deal for you i confirm that i want to sell fifty percent of fidelity special situation fund which is worth fifty five thousand pounds from my account one two three four five six seven yes perfect'
+
+type sell
+fund fidelity special situation fund
+amount fifty five thousand pounds
+account one two three four five six seven
