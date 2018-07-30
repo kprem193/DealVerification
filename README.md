@@ -24,3 +24,5 @@ wget -O - https://github.com/mozilla/DeepSpeech/releases/download/v0.1.1/deepspe
 index1.php -> It is the second part of prototype which caontains the part of Feature Extraction. It is running Spacy in background for extracting Features It has undergone custom training on our data and it outputs following faetures (type : (type of deal sell/buy/switch), amount: ,fund : , account : ) and also (from and to) in switch type deals.
 
 
+Training Folder Contains the procedure of Training DeepSpeech and Spacy.
+
