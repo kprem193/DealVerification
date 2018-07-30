@@ -1,0 +1,8 @@
+{
+  "deprecation_fixes":{
+    "vectors_name":null
+  },
+  "pretrained_dims":0,
+  "cnn_maxout_pieces":2,
+  "pretrained_vectors":null
+}
