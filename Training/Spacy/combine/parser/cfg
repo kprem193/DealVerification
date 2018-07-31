@@ -1,0 +1,17 @@
+{
+  "deprecation_fixes":{
+    "vectors_name":null
+  },
+  "nr_class":111,
+  "cnn_maxout_pieces":3,
+  "token_vector_width":128,
+  "hidden_depth":1,
+  "hist_width":0,
+  "hist_size":0,
+  "pretrained_dims":0,
+  "beam_width":1,
+  "hidden_width":200,
+  "beam_density":0.0,
+  "pretrained_vectors":null,
+  "maxout_pieces":2
+}
