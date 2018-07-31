@@ -116,3 +116,21 @@ Run the following command to start the training the pretrained model :
 ```
 python3 ./DeepSpeech.py --n_hidden 2048 --initialize_from_frozen_model models/output_graph.pb --checkpoint_dir provide_checkpoint_directory/ --epoch provide_number_of_epoch(10) --train_files train.csv --dev_files dev.csv --test_files test.csv --export_dir provide_the_directory_to_get_output_graph --decoder_library_path ./libctc_decoder_with_kenlm.so
 ```
+## After Training
+You will get the output file in export_directory provided,
+
+To run you trained model run this command in your DeepSpeech Directory:
+```
+./deepspeech --model path_output_file_you_get_in_export_directory(output_graph.pb) --alphabet models/alphabet.txt --lm models/lm.binary --trie models/trie --audio audio_input.wav
+```
+
+## Notes:
+To test if your setup is right run:
+```
+./bin/run-ldc93s1.sh
+```
+About Checkpoints:
+
+During training of a model so-called checkpoints will get stored on disk. This takes place at a configurable time interval. The purpose of checkpoints is to allow interruption (also in the case of some unexpected failure) and later continuation of training without losing hours of training time. Resuming from checkpoints happens automatically by just (re)starting training with the same --checkpoint_dir of the former run.
+
+Be aware however that checkpoints are only valid for the same model geometry they had been generated from. In other words: If there are error messages of certain Tensors having incompatible dimensions, this is most likely due to an incompatible model change. One usual way out would be to wipe all checkpoint files in the checkpoint directory or changing it before starting the training.
