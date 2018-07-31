@@ -125,7 +125,7 @@ To run you trained model run this command in your DeepSpeech Directory:
 ```
 
 ## Notes:
-To test if your setup is right run:
+To test if your setup is right, run:
 ```
 ./bin/run-ldc93s1.sh
 ```
