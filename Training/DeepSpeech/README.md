@@ -33,4 +33,18 @@ Download the pre-built binaries:
 ```
 python3 util/taskcluster.py --target .
 ```
+Prepare the data for training
+Make 3 csv files train.csv, test.csv, dev.csv
+
+Format of csv : 'wav_filename', 'wav_filesize', 'transcript'
+
+Run the following command to start the training from scratch:
+``` 
+python3 ./DeepSpeech.py --checkpoint_dir provide_checkpoint_directory/ --epoch provide_number_of_epoch(10) --train_files train.csv --dev_files dev.csv --test_files test.csv --export_dir provide_the_directory_to_get_output_graph --decoder_library_path ./libctc_decoder_with_kenlm.so
+```
+Run the following command to start the training the pretrained model :
+```
+python3 ./DeepSpeech.py --n_hidden 2048 --initialize_from_frozen_model models/output_graph.pb --checkpoint_dir provide_checkpoint_directory/ --epoch provide_number_of_epoch(10) --train_files train.csv --dev_files dev.csv --test_files test.csv --export_dir provide_the_directory_to_get_output_graph --decoder_library_path ./libctc_decoder_with_kenlm.so
+```
+
 
