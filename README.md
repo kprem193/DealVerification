@@ -6,6 +6,7 @@ Put the files in the required file as per your apache installation
 
 ### Prerequisites 
 DeepSpeech : ```pip3 install DeepSpeech```
+
 Spacy : 
 ```
 pip install spacy
